@@ -33,8 +33,8 @@ void date :: Bool_checkDate(int j, int m, int a) {
 
 void date :: affiche() {  // méthode qui affiche la date 
     cout << "aujourd'hui on est le "
-                << this-> jour << ", "
-                << this-> mois << ", "
+                << this-> jour << "/ "
+                << this-> mois << "/ "
                 << this-> annee << endl;
 };
 

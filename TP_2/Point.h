@@ -18,4 +18,4 @@ class point {
 
 };
 
-#endif // POINT_H
+#endif 

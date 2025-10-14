@@ -2,12 +2,14 @@
 #define DATE_H
 
 class date {
-    private: 
+    private:    // partie privée = contient les attributs; méthodes; ...
         int jour;
         int mois;
         int annee;
 
-    public:
+        void Bool_checkDate(int j, int m, int a);
+        
+    public: // partie public = contient constructeurs; méthodes; getters; ...      
         // Constructeurs
         date(int a, int b, int c);
         

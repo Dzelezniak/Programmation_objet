@@ -1,6 +1,6 @@
 #include "Point.h"
 // Constructeurs 
-point :: point (int a, int b, int c) {
+point :: point(int a, int b, int c) {
     this-> x = a;
     this-> y = b;
     this-> z = c;

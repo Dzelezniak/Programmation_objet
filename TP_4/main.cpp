@@ -1,13 +1,10 @@
+#include "Date.h"
+#include "Date.cpp"
 #include <iostream>
-#include "Point.h"
-#include "Point.cpp"
+using namespace std;
 
 int main() {
-    
-    std :: cout << "les coordonnees de p sont :" 
-                << p.getX() << ", "
-                << p.getY() << ", "
-                << p.getZ() << std :: endl;
+    date d = date(1,52,2025) ;
+    d.affiche();
     return 0;
-
-}
+};

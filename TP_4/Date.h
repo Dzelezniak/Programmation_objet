@@ -4,20 +4,21 @@
 class date {
     private:    // partie privée = contient les attributs; méthodes; ...
         // Les attributs
-        int jour;
-        int mois;
+        int jour; 
+        int mois; 
         int annee;
-
-        void Bool_checkDate(int j, int m, int a) ;
+        
+        
 
     public: // partie public = contient constructeurs; méthodes; getters; ...      
         // Constructeurs
-        date_par_defaut();
         date(int j, int m, int a);
         
         // Méthodes public
-        void affiche() ;
-        
+        void affiche();
+        void Bool_checkDate(int j, int m, int a);
+        void date_par_defaut();
+
         // Getters (on met 'const' avec les getters, c'est pour ne pas modifier les attributs de l'objet sur lequel on applique la méthode)
         int getjour() const;
         int getmois() const;

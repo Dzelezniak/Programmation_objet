@@ -1,4 +1,6 @@
 #include "Point.h"
+#include <iostream>
+
 // Constructeurs 
 point :: point(int a, int b, int c) {
     this-> x = a;

@@ -1,69 +1,67 @@
 #include "Date.h"
+#include <iostream>
+using namespace std;    // permet de ne pas ajouter à chaque fois 'std' lorsqu'on veut print un message
 
-// Constructeurs 
-date :: date_par_defaut() {
+// Méthode qui initialise par défaut
+void date :: date_par_defaut() {
     this-> jour = 1;
     this-> mois = 1;
     this-> annee = 2000;
-}
+};
 
+// Constructeurs 
 date :: date(int j, int m, int a) {
     this-> jour = j;
     this-> mois = m;
     this-> annee = a;
-}
+};
 
 
 // Méthodes
 void date :: Bool_checkDate(int j, int m, int a) {
-    if 1 <= this-> jour <= 31 && 1 <= this-> mois <= 12 && 2000 <= this-> annee <= 2050 {
-        std :: cout << "les valeurs sont admissibles" 
-                    << std :: endl;
-        this-> jour = j;
-        this-> mois = m;
-        this-> annee = a;
+    if ((jour >= 1 && jour <= 31) && (mois >= 1 && mois <= 12) && (annee >= 2000 && annee <= 2050)) {
+        cout << "les valeurs sont admissibles" << endl;
+        jour = j;
+        mois = m;
+        annee = a;
     };
+    this-> jour = 1;
+    this-> mois = 1;
+    this-> annee = 2000;
 
-    else {
-        this-> jour = 1;
-        this-> mois = 1;
-        this-> annee = 2000;
-    };
+};
 
-}
-
-
-void affiche() {  // méthode qui affiche la date 
-    std :: cout << "aujourd'hui on est le "
+void date :: affiche() {  // méthode qui affiche la date 
+    cout << "aujourd'hui on est le "
                 << this-> jour << ", "
                 << this-> mois << ", "
-                << this-> annee << std :: endl;
-}
+                << this-> annee << endl;
+};
 
 
 // Getters
 int date :: getjour() const {
-    return this-> jour;
-}
+    return  this-> jour;
+};
 
 int date :: getmois() const {
     return this-> mois;
-}
+};
 
 int date :: getannee() const {
     return this-> annee;
-}
+};
 
 
 // Setters
 void date :: setjour(int j) {
     this-> jour = j;
-}
+};
 
 void date :: setmois(int m) {
     this-> mois = m;
-}
+};
 
 void date :: setannee(int a) {
     this-> annee = a;
-}
+};

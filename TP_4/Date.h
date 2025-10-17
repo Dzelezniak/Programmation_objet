@@ -12,12 +12,11 @@ class date {
 
     public: // partie public = contient constructeurs; méthodes; getters; ...      
         // Constructeurs
-        date(int j, int m, int a);
+        date();
         
         // Méthodes public
         void affiche();
         void Bool_checkDate(int j, int m, int a);
-        void date_par_defaut();
 
         // Getters (on met 'const' avec les getters, c'est pour ne pas modifier les attributs de l'objet sur lequel on applique la méthode)
         int getjour() const;

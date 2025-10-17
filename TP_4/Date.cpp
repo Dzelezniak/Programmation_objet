@@ -2,28 +2,22 @@
 #include <iostream>
 using namespace std;    // permet de ne pas ajouter à chaque fois 'std' lorsqu'on veut print un message
 
-// Méthode qui initialise par défaut
-void date :: date_par_defaut() {
+
+// Constructeurs 
+date :: date() {
     this-> jour = 1;
     this-> mois = 1;
     this-> annee = 2000;
 };
 
-// Constructeurs 
-date :: date(int j, int m, int a) {
-    this-> jour = j;
-    this-> mois = m;
-    this-> annee = a;
-};
-
 
 // Méthodes
 void date :: Bool_checkDate(int j, int m, int a) {
-    if ((jour >= 1 && jour <= 31) && (mois >= 1 && mois <= 12) && (annee >= 2000 && annee <= 2050)) {
+    if ((j >= 1 && j <= 31) && (m >= 1 && m <= 12) && (a >= 2000 && a <= 2050)) {
         cout << "les valeurs sont admissibles" << endl;
-        jour = j;
-        mois = m;
-        annee = a;
+        this-> jour = j;
+        this-> mois = m;
+        this-> annee = a;
     };
     this-> jour = 1;
     this-> mois = 1;
@@ -33,8 +27,8 @@ void date :: Bool_checkDate(int j, int m, int a) {
 
 void date :: affiche() {  // méthode qui affiche la date 
     cout << "aujourd'hui on est le "
-                << this-> jour << "/ "
-                << this-> mois << "/ "
+                << this-> jour << "/"
+                << this-> mois << "/"
                 << this-> annee << endl;
 };
 

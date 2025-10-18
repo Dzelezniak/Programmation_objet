@@ -1,2 +1,18 @@
+    ----------------------------
+
+# the key features of ".gitignore" :
+
+# ignoring specific file : .<name_of_file>
+
+# igoring specific folder : /<name_of_folder>
+
+# ignoring file extension type : *.<name_of_extension> (rem.: on peut ajouter des exceptions si besoin, si par exemple on veut ignorer les fichiers ".log" mais qu'on veut garder le fichier "important.log" alors on fait : !important.log)
+
+# ignoring specific file path : <folder_1>/<folder_2>/.../<the_specific_file>
+
+
+
+    ----------------------------
+
 # ignore tous les fichiers (du projet TPs_C++_S7_Centrale_Marseille) avec l'extension ".exe"
 *.exe

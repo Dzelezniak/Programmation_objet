@@ -1,4 +1,4 @@
-    ----------------------------
+     ----------------------------
 
 # the key features of ".gitignore" :
 
@@ -9,8 +9,6 @@
 # ignoring file extension type : *.<name_of_extension> (rem.: on peut ajouter des exceptions si besoin, si par exemple on veut ignorer les fichiers ".log" mais qu'on veut garder le fichier "important.log" alors on fait : !important.log)
 
 # ignoring specific file path : <folder_1>/<folder_2>/.../<the_specific_file>
-
-
 
     ----------------------------
 

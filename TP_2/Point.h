@@ -16,6 +16,10 @@ class point {
         int getY() const;
         int getZ() const;
 
+        // Setters
+        void setX(int x);
+        void setY(int y);
+        void setZ(int z);
 };
 
 #endif 

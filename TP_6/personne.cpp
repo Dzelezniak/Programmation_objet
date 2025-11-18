@@ -1,12 +1,23 @@
 #include "personne.h"
 #include <iostream>
 #include <string>
+using namespace std; 
 
 personne :: personne(string n, string p) {
     this-> nom = n;
     this-> prenom = p;
     this-> adresse = "";    // adresse et tel sont mis par défaut à la chaîne vide 
     this-> tel = "";
+};
+
+// Méthodes 
+
+void personne :: affiche() {    // méthode qui affiche les attributs de la personne   
+    cout << "c'est "
+            << this-> nom << " "
+            << this-> prenom << " " 
+            << this-> adresse << " "
+            << this-> tel << endl;
 };
 
 // Getters
@@ -24,7 +35,7 @@ string personne :: getadresse() const {
 
 string personne :: gettel() const {
     return tel
-}
+};
 
 // Setters
 void personne :: setnom(string nom1) {

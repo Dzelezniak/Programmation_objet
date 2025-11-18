@@ -2,7 +2,7 @@
 #define POINT_H
 
 class point {
-    private: 
+    private:    // Attributs
         int x;
         int y;
         int z;
@@ -11,15 +11,16 @@ class point {
         // Constructeurs
         point(int a, int b, int c);
         
+        recopie()
         // Getters
         int getX() const;
         int getY() const;
         int getZ() const;
 
         // Setters
-        void setX(int x);
-        void setY(int y);
-        void setZ(int z);
+        void setX(int X);
+        void setY(int Y);
+        void setZ(int Z);
 };
 
 #endif 

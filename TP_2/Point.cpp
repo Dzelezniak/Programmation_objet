@@ -8,7 +8,17 @@ point :: point(int a, int b, int c) {
     this-> z = c;
 };
 
-point :: recopie()
+point :: point_defaut() {
+    this-> x = 0;
+    this-> y = 0;
+    this-> z = 0;
+};
+
+point :: recopie(point p) {
+    this-> x = p.x;
+    this-> y = p.y;
+    this-> z = p.z;
+}
 
 // Getters
 int point :: getX() const {

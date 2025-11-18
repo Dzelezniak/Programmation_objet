@@ -1,4 +1,5 @@
-#include <iostream>
+#include <iostream>     // importe la bibliothèque iostream qui permet d'utiliser les fonctions pour input/output (ex: 'cin' et 'cout', et donc de pouvoir print des choses dans la console)
+#include "Point.h"
 #include "Point.h"
 #include "Point.cpp"
 

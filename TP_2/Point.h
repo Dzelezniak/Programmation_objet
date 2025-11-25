@@ -11,7 +11,8 @@ class point {
         // Constructeurs
         point(int a, int b, int c);
         
-        recopie()
+        point recopie(point p);
+        
         // Getters
         int getX() const;
         int getY() const;

@@ -22,11 +22,16 @@ class personne {
         string gettel() const;
 
         // Setters
+        void setnom(string nom1);
+        void setprenom(string prenom1);
+        void setadresse(string adresse1);
+        void settel(string tel1);
         
+
         
     
 
-}
+};
 
 
 #endif

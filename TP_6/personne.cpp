@@ -3,6 +3,8 @@
 #include <string>
 using namespace std; 
 
+// Constructeurs
+
 personne :: personne(string n, string p) {
     this-> nom = n;
     this-> prenom = p;

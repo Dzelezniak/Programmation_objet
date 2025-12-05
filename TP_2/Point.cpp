@@ -1,24 +1,26 @@
 #include "Point.h"
 #include <iostream>
 
-// Constructeurs 
+// Constructeurs (Rem.: TOUS les constructeurs d'une classe doivent avoir le même nom que celui de la classe)
+
 point :: point(int a, int b, int c) {
     this-> x = a;
     this-> y = b;
     this-> z = c;
 };
 
-point :: point_defaut() {
+point :: point() {
     this-> x = 0;
     this-> y = 0;
     this-> z = 0;
 };
 
-point :: recopie(point p) {
+point :: point(const point& p) {
     this-> x = p.x;
     this-> y = p.y;
     this-> z = p.z;
-}
+};
+
 
 // Getters
 int point :: getX() const {

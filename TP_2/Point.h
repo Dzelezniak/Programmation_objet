@@ -8,10 +8,11 @@ class point {
         int z;
 
     public:
-        // Constructeurs
-        point(int a, int b, int c);
+        // Constructeurs (Rem.: TOUS les constructeurs d'une classe doivent avoir le même nom que celui de la classe)
+        point(int a, int b, int c); // constructeur 'classique'
+        point();    // constructeur par défaut
+        point(const point& p); // contructeur recopie
         
-        point recopie(point p);
         
         // Getters
         int getX() const;

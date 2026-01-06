@@ -7,9 +7,9 @@ int main() {
     point p1 = point(2,4,6);
     point p2 = point(p1);   
     cout << "les coordonnees de p2 sont :" 
-                << p2.getX() << ", "
-                << p2.getY() << ", "
-                << p2.getZ() << endl;
+                "("<< p2.getX() << ","
+                << p2.getY() << ","
+                << p2.getZ() << ")" << endl;
     return 0;
 
 }

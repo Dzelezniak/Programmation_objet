@@ -1,7 +1,7 @@
 #ifndef POINT_H
 #define POINT_H
 
-class point {
+class point {   // !! Rem.: à la fin de la définition d'une classe il faut mettre ';' !!
     private:    // Attributs
         int x;
         int y;
@@ -23,6 +23,6 @@ class point {
         void setX(int X);
         void setY(int Y);
         void setZ(int Z);
-};
+};  // le ';' à mettre à la fin de 'class'
 
 #endif 
